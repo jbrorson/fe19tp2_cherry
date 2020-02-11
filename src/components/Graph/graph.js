@@ -1,5 +1,7 @@
-import React, {Component} from './node_modules/react';
-import { Line, Doughnut  } from './node_modules/react-chartjs-2';
+import React, {Component} from 'react';
+import { Line, Doughnut  } from 'react-chartjs-2';
+
+
 
 const doughnutData = {
   labels: ['Swedbank salary', 'Nordea salary', 'Whatvetjag salary'],
@@ -77,6 +79,11 @@ const lineData = {
   ]
 };
 
+
+//så på framtiden när du väl tar data från api
+//då är det att skapa action metod för att hämta data
+//sen hämta den datan från en reducer
+//slutligen anslut Graph till containern
 
 export default class Graph extends Component {
   render() {

@@ -7,7 +7,6 @@ import { Nav, MenuItems, A, AccountA, StyledLogo, Menu, StyledImgLogo } from './
 
 class Navbar extends React.Component {
   mediaQuery = window.matchMedia('(max-width: ' + Theme.screenSize.xsmall + ')')
-
   listnerMobileSize = (event) => {
     this.setState({
       isMobile: event.matches
@@ -31,7 +30,7 @@ class Navbar extends React.Component {
   }
 
   menuBtnClick() {
-    this.setState({
+    this.setState({ 
       showMenu: !this.state.showMenu,
       isMobile: this.state.isMobile
     })
