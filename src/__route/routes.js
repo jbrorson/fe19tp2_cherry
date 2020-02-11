@@ -5,6 +5,7 @@ import Login from  '../components/Login/login'
 import { Route, Switch } from 'react-router-dom'
 import { connect } from 'react-redux';
 import AddClient from '../components/AddClient/addClient'
+import Graph from '../components/Graph/graph';
 
 class Routes extends React.Component {
   render() {
@@ -16,6 +17,7 @@ class Routes extends React.Component {
         <Route exact path="/login" component={Login} />
         <Route exact path="/about" />
         <Route exact path="/client" component={AddClient} />
+        <Route exact path="/graph" component={Graph} />
       </Switch>
     );
   }
